@@ -30,9 +30,15 @@
 /turf/open/floor/grass
 	name = "grass patch"
 	icon_state = "grass"
+	baseturf = /turf/open/floor/dirt
 	floor_tile = /obj/item/stack/tile/grass
 	broken_states = list("sand")
 	var/ore_type = /obj/item/weapon/ore/glass
+
+/turf/open/floor/dirt
+	name = "dirt"
+	icon_state = "dirt"
+	baseturf = /turf/open/floor/dirt
 
 /turf/open/floor/grass/New()
 	..()
