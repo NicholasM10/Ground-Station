@@ -5,11 +5,15 @@
 	icon_state = "r_wall"
 	opacity = 1
 	density = 1
-
 	var/d_state = 0
 	hardness = 10
 	sheet_type = /obj/item/stack/sheet/plasteel
 	explosion_block = 2
+
+/turf/closed/wall/r_wall/coastwall // wall used to make a border for a land map.
+	name = "coastline"
+	icon = 'icons/misc/beach.dmi'
+	icon_state = "sandwater_b"
 
 /turf/closed/wall/r_wall/break_wall()
 	builtin_sheet.loc = src

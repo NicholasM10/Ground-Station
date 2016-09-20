@@ -30,6 +30,8 @@
 /turf/open/floor/grass
 	name = "grass patch"
 	icon_state = "grass"
+	initial_gas_mix = "o2=22;n2=82;TEMP=293.15"
+	planetary_atmos = TRUE
 	baseturf = /turf/open/floor/dirt
 	floor_tile = /obj/item/stack/tile/grass
 	broken_states = list("sand")

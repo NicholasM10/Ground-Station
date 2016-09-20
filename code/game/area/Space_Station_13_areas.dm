@@ -13,6 +13,9 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 
 */
 
+/*
+More like ground station areas.
+*/
 
 /area
 	level = null
@@ -80,6 +83,20 @@ var/list/teleportlocs = list()
 	sortTim(teleportlocs, /proc/cmp_text_dsc)
 
 /*-----------------------------------------------------------------------------*/
+
+//Ground areas
+
+/area/ground/
+	name = "ground"
+	requires_power = 0
+	//atmos = 0
+	has_gravity = 1
+	outdoors = 1
+	power_environ = 0
+	power_equip = 0
+	power_light = 0
+
+//
 
 /area/engine/
 
